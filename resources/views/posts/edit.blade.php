@@ -4,6 +4,10 @@
         <meta charset="utf-8">
         <title>Blog</title>
     </head>
+    <x-app-layout>
+            <x-slot name="header">
+        　ブログ
+    </x-slot>
     <body>
         <h1>Blog Name</h1>
         <form action="/posts/{{ $post->id }}" method="POST">
@@ -24,4 +28,5 @@
         <div class="footer">[<a href="/posts/{{ $post->id }}">戻る</a>
         </div>
     </body>
+    </x-app-layout>
 </html>
